@@ -1,0 +1,26 @@
+%width100{
+    width: 100px;
+}
+%height100{
+    height: 100px;
+}
+.red{
+    @extend %width100;
+    @extend %height100;
+    background-color: red;
+}
+.blue{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 50px;
+    @extend %width100;
+    @extend %height100;
+    background-color: blue;
+}
+.green{
+    position: absolute;
+    @extend %width100;
+    @extend %height100;
+    margin-left: 100px;
+    background-color: green;
+}
